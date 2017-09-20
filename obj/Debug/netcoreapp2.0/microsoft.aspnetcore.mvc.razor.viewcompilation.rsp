@@ -1,0 +1,12 @@
+D:\Projetos GIT\Fennec Fox Solutions\RWA.CardosoConsorcio
+--output-path=obj\Debug\netcoreapp2.0\
+--application-name=RWA.CardosoConsorcio
+--content-root=D:\Projetos GIT\Fennec Fox Solutions\RWA.CardosoConsorcio
+--file=D:\Projetos GIT\Fennec Fox Solutions\RWA.CardosoConsorcio\Views\Home\About.cshtml
+--file=D:\Projetos GIT\Fennec Fox Solutions\RWA.CardosoConsorcio\Views\Home\Contact.cshtml
+--file=D:\Projetos GIT\Fennec Fox Solutions\RWA.CardosoConsorcio\Views\Home\Index.cshtml
+--file=D:\Projetos GIT\Fennec Fox Solutions\RWA.CardosoConsorcio\Views\Shared\Error.cshtml
+--file=D:\Projetos GIT\Fennec Fox Solutions\RWA.CardosoConsorcio\Views\Shared\_Layout.cshtml
+--file=D:\Projetos GIT\Fennec Fox Solutions\RWA.CardosoConsorcio\Views\Shared\_ValidationScriptsPartial.cshtml
+--file=D:\Projetos GIT\Fennec Fox Solutions\RWA.CardosoConsorcio\Views\_ViewImports.cshtml
+--file=D:\Projetos GIT\Fennec Fox Solutions\RWA.CardosoConsorcio\Views\_ViewStart.cshtml
