@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - RWA.CardosoConsorcio</title>
-
+    <script src="~/lib/modernizr/modernizr-custom.js" asp-append-version="true"></script>
     <environment include="Development">
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
         <link rel="stylesheet" href="~/css/site.css" />
@@ -27,13 +27,18 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">RWA.CardosoConsorcio</a>
+                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">
+                    <img src="images/default/logo-rwa.svg" data-fallback="images/default/logo-rwa.png"  class="logo img-responsive">
+                </a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="About">Como Fazer</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">Consórcios</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">Vantagens</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">Depoimentos</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contato</a></li>
                 </ul>
             </div>
         </div>
