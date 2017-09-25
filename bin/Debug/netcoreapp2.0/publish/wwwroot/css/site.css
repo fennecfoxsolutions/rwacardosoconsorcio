@@ -1,6 +1,7 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* Wrapping element */
@@ -22,4 +23,73 @@
 
 img.logo{
     width: 100%;
+}
+
+nav ul.navbar-nav{
+    float:right;
+    padding-top: 20px;
+}
+
+nav.navbar-inverse .navbar-nav > li > a {
+    text-transform: uppercase;
+    color: #29292b;
+    font-size: 15px;
+}
+
+nav.navbar-inverse .navbar-nav > li > a.active:before{
+    content: '';
+    width: 25%;
+    height: 3px;
+    background-color: #f4c81d;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 1;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus{
+    color: #29292b;
+}
+
+footer {
+    background-color: #171718;
+    margin-bottom: 0;
+    padding-top: 20px;    
+    padding-bottom: 0;
+}
+
+footer h3 {
+    font-family: 'Roboto Slab', sans-serif;
+    text-transform: uppercase;
+    color: #ededed;    
+    font-size: 16px;
+    font-weight: bold;
+}
+
+footer p {
+    color: #ededed;    
+    font-size: 14px;
+}
+
+footer .copyright {
+    font-family: 'Roboto Slab', sans-serif;
+    background-color: #151516;
+    padding-top: 8px;
+    padding: 0;
+    margin-top: 20px;
+}
+
+footer .copyright p {
+    color: #8c8c8c;
+    padding: 0;
+    margin: 10px;
+    line-height: 32px;
+}
+
+span.amarelo{
+    color: #f4c81d;
+    margin-right: 2px;
 }
