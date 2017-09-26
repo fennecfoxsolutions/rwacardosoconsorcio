@@ -1,5 +1,5 @@
 ﻿body {
-    padding-top: 50px;    
+    /* padding-top: 85px;     */
     font-family: 'Roboto', sans-serif;
 }
 
@@ -54,6 +54,15 @@ nav.navbar-inverse .navbar-nav > li > a:hover:before, nav.navbar-inverse .navbar
     color: #29292b;
 }
 
+.slides-rwa .swiper-slide{
+    height: 100vh;
+}
+
+.slides-rwa .slide-moto {
+    background-image: url('../images/banner/banner-moto.jpg');
+    background-size: cover;
+}
+
 p {
     font-weight: lighter;
     font-size: 17px;
@@ -80,13 +89,37 @@ h2:before{
 }
 
 .painel-branco{
-    padding: 20px 0 20px 0;
+    padding: 40px 0 40px 0;
     background-color: #fff;
 }
 
 .painel-cinza {
-    padding: 20px 0 20px 0;
+    padding: 40px 0 40px 0;
     background-color: #fafafa;
+}
+
+img.img-vantagem{
+    max-width: 80px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.separador {
+    z-index: 999;
+    position: relative;
+}
+
+.separador:before{
+    content: '';
+    width: 3px;
+    height: 50px;
+    background-color: #f4c81d;
+    position: absolute;
+    left: 0;
+    right: 0;    
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -25px;
 }
 
 footer {
@@ -139,6 +172,10 @@ span.amarelo{
 
 .espaco-top-30 {
     margin-top: 30px;
+}
+
+.espaco-top-50 {
+    margin-top: 50px;
 }
 
 .pd-left-0 {

@@ -1,16 +1,40 @@
 <div ng-controller="homeController">
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    
-    <p>Nome: {{nome}}</p> 
+  
+    <!-- Banner Principal -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="swiper-container slides-rwa" id="banner-principal" offset="0">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide slide-moto">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12">                                
+                                        <p>
+                                            As medições de sua empresa sempre estarão em  <br />
+                                            boas mãos, quem conhece confia!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!-- If we need pagination -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </div>
+    </div>        
+
+    <div class="separador"></div>
 
     <!-- Como faço para fazer um consórcio -->
-    <div class="painel-branco">
+    <div class="painel-branco espaco-top-50">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
@@ -71,16 +95,40 @@
         </div>
     </div>
 
-     <!-- Vantagens em fazer um consórcio -->
-     <div class="painel-cinza">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h2>Vantagens em fazer um consórcio</h2>                   
-                    </div>              
-                </div>
+    <div class="separador"></div>
+
+    <!-- Vantagens em fazer um consórcio -->
+    <div class="painel-cinza">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Vantagens em fazer um consórcio</h2>                   
+                </div>              
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="images/vantagens/vantagem-1.svg" data-fallback="images/vantagens/vantagem-1.png"  class="logo img-responsive center-block img-vantagem"/>
+                    <p class="text-center"><strong>Donec sollicitudin</strong></p>
+                    <p class="text-center">Donec sollicitudin molestie malesuada. Curabitur non nulla sit amet nisl accumsan id imperdiet et, port sem.</p>
+                </div>        
+                <div class="col-md-3">
+                    <img src="images/vantagens/vantagem-2.svg" data-fallback="images/vantagens/vantagem-2.png"  class="logo img-responsive center-block img-vantagem"/>
+                    <p class="text-center"><strong>Donec sollicitudin</strong></p>
+                    <p class="text-center">Donec sollicitudin molestie malesuada. Curabitur non nulla sit amet nisl accumsan id imperdiet et, port sem.</p>
+                </div>    
+                <div class="col-md-3">
+                    <img src="images/vantagens/vantagem-3.svg" data-fallback="images/vantagens/vantagem-3.png"  class="logo img-responsive center-block img-vantagem"/>
+                    <p class="text-center"><strong>Donec sollicitudin</strong></p>
+                    <p class="text-center">Donec sollicitudin molestie malesuada. Curabitur non nulla sit amet nisl accumsan id imperdiet et, port sem.</p>
+                </div>    
+                <div class="col-md-3">
+                    <img src="images/vantagens/vantagem-4.svg" data-fallback="images/vantagens/vantagem-4.png"  class="logo img-responsive center-block img-vantagem"/>
+                    <p class="text-center"><strong>Donec sollicitudin</strong></p>
+                    <p class="text-center">Donec sollicitudin molestie malesuada. Curabitur non nulla sit amet nisl accumsan id imperdiet et, port sem.</p>
+                </div>          
             </div>
         </div>
+    </div>
 
      <!-- Depoimentos -->
      <div class="painel-branco">
