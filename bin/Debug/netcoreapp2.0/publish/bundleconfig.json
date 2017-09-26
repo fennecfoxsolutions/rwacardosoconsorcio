@@ -9,6 +9,13 @@
     ]
   },
   {
+    "outputFileName": "wwwroot/css/site.mobile.min.css",
+    // An array of relative input file paths. Globbing patterns supported
+    "inputFiles": [
+      "wwwroot/css/site.mobile.css"
+    ]
+  },
+  {
     "outputFileName": "wwwroot/js/site.min.js",
     "inputFiles": [
       "wwwroot/clientapp/app.module.js",
