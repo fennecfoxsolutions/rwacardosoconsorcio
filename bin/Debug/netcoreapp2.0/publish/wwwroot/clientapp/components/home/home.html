@@ -1,11 +1,235 @@
 <div ng-controller="homeController">
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    
-    <p>Nome: {{nome}}</p>
+  
+    <!-- Banner Principal -->
+
+    <section class="container" id="home" offset="80">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="swiper-container slides-rwa" id="banner-principal" offset="0">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide slide-moto">                            
+                            <div class="painel-texto">
+                                <h3>
+                                    Conquiste a moto <br> 
+                                    dos seus sonhos
+                                </h3>
+                                <p>
+                                    Curabitur non nulla sit amet nisl tempus <br>
+                                    convallis quis ac lectus.
+                                </p>
+                                <a href="#" class="botao-acao">
+                                    <img src="images/banner/botao-acao-banner.svg" class="img-responsive" data-fallback="images/banner/botao-acao-banner.png" /> 
+                                </a>                                
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide-carro">                            
+                                <div class="painel-texto">
+                                    <h3>
+                                        Conquiste o carro <br> 
+                                        dos seus sonhos
+                                    </h3>
+                                    <p>
+                                        Curabitur non nulla sit amet nisl tempus <br>
+                                        convallis quis ac lectus.
+                                    </p>
+                                    <a href="#" class="botao-acao">
+                                        <img src="images/banner/botao-acao-banner.svg" class="img-responsive" data-fallback="images/banner/botao-acao-banner.png" /> 
+                                    </a>                                
+                                </div>                                                                                                        
+                            </div>
+                    </div>
+                     <!-- Add Pagination -->
+                    <div class="swiper-pagination swiper-pagination-banner"></div>
+                </div>
+            </div>
+        </div>
+    </section>        
+
+    <div class="separador"></div>
+
+    <!-- Como faço para fazer um consórcio -->
+    <section class="painel-branco espaco-top-50" id="como-fazer-consorcio" offset="80">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Como faço para fazer um consórcio?</h2>
+                    <p>Nulla porttitor accumsan tincidunt. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.</p>                        
+                    <p>Nulla porttitor accumsan tincidunt. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.</p>                        
+                    <p>Nulla porttitor accumsan tincidunt. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="images/default/como-fazer-consorcio.jpg" class="img-responsive center-block" alt="Imagem do cliente ligando para RWA"/>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Consórcios mais vendidos -->
+    <section class="painel-branco" id="tipos-consorcio" offset="80">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Consórcios mais vendidos</h2>                   
+                </div>              
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="#">
+                        <img src="images/servicos/box-casa.jpg" class="img-consorcio-servico img-responsive center-block espaco-bot-50" />
+                    </a>                                   
+                </div>         
+                <div class="col-md-4">
+                    <a href="#">
+                        <img src="images/servicos/box-carro.jpg" class="img-consorcio-servico img-responsive center-block espaco-bot-50" />
+                    </a>  
+               </div>
+               <div class="col-md-4">
+                    <a href="#">
+                        <img src="images/servicos/box-casa.jpg" class="img-consorcio-servico img-responsive center-block espaco-bot-50" />
+                    </a>  
+                </div>     
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="#">
+                        <img src="images/servicos/box-moto.jpg" class="img-consorcio-servico img-responsive center-block espaco-bot-50" />
+                    </a>  
+                </div>         
+                <div class="col-md-4">
+                    <a href="#">
+                        <img src="images/servicos/box-servicos.jpg" class="img-consorcio-servico img-responsive center-block espaco-bot-50" />
+                    </a>  
+               </div>
+               <div class="col-md-4">
+                    <a href="#">
+                        <img src="images/servicos/box-caminhao.jpg" class="img-consorcio-servico img-responsive center-block espaco-bot-50" />
+                    </a> 
+                </div>     
+            </div>
+        </div>
+    </section>
+
+    <div class="separador"></div>
+
+    <!-- Vantagens em fazer um consórcio -->
+    <section class="painel-cinza" id="vantagens" offset="80">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Vantagens em fazer um consórcio</h2>                   
+                </div>              
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="images/vantagens/vantagem-1.svg" data-fallback="images/vantagens/vantagem-1.png"  class="img-responsive center-block img-vantagem"/>
+                    <p class="text-center"><strong>Donec sollicitudin</strong></p>
+                    <p class="text-center">Donec sollicitudin molestie malesuada. Curabitur non nulla sit amet nisl accumsan id imperdiet et, port sem.</p>
+                </div>        
+                <div class="col-md-3">
+                    <img src="images/vantagens/vantagem-2.svg" data-fallback="images/vantagens/vantagem-2.png"  class="img-responsive center-block img-vantagem"/>
+                    <p class="text-center"><strong>Donec sollicitudin</strong></p>
+                    <p class="text-center">Donec sollicitudin molestie malesuada. Curabitur non nulla sit amet nisl accumsan id imperdiet et, port sem.</p>
+                </div>    
+                <div class="col-md-3">
+                    <img src="images/vantagens/vantagem-3.svg" data-fallback="images/vantagens/vantagem-3.png"  class="img-responsive center-block img-vantagem"/>
+                    <p class="text-center"><strong>Donec sollicitudin</strong></p>
+                    <p class="text-center">Donec sollicitudin molestie malesuada. Curabitur non nulla sit amet nisl accumsan id imperdiet et, port sem.</p>
+                </div>    
+                <div class="col-md-3">
+                    <img src="images/vantagens/vantagem-4.svg" data-fallback="images/vantagens/vantagem-4.png"  class="img-responsive center-block img-vantagem"/>
+                    <p class="text-center"><strong>Donec sollicitudin</strong></p>
+                    <p class="text-center">Donec sollicitudin molestie malesuada. Curabitur non nulla sit amet nisl accumsan id imperdiet et, port sem.</p>
+                </div>          
+            </div>
+        </div>
+    </section>
+
+     <!-- Depoimentos -->
+     <section class="painel-branco" id="depoimentos" offset="80">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Depoimentos</h2>                   
+                </div>              
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="slide-depoimentos" class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <img src="images/depoimentos/moto.png" class="img-responsive pull-right" />
+                                    </div>
+                                    <div class="col-md-8 pd-top-70">
+                                        <h4>Luísa Santiago</h4>
+                                        <strong>Consórcio de moto</strong>
+                                        <p>Consórcio de Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Sed porttitor lectus nimoto.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                        
+                        <div class="swiper-pagination swiper-pagination-depoimentos"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="separador"></div>
+
+    <!-- Contato -->
+    <section class="painel-contato" id="contato" offset="80">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Está interessado em <br>
+                        algum consórcio?</h2>  
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <form class="form-rwa" name="formularioContato" ng-submit="enviarEmail(contato)">
+                        <div class="form-group col-md-12">
+                            <input type="text" class="form-control" ng-required="true" ng-minlength="3" ng-maxlength="40" ng-model="contato.nome" name="nome" placeholder="Nome" autocomplete="off" spellcheck="false">
+                            <div ng-messages="formularioContato.nome.$error" ng-show="formularioContato.nome.$touched" role="alert">
+                                <div ng-message="required">Digite o nome</div>
+                                <div ng-message="minlength">O nome está muito curto</div>
+                                <div ng-message="maxlength">O nome está muito longo</div>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <input type="tel" class="form-control" name="telefone" placeholder="Telefone" ng-required="true" ui-br-phone-number ng-model="contato.telefone" autocomplete="off" spellcheck="false">
+                            <div ng-messages="formularioContato.telefone.$error" ng-show="formularioContato.telefone.$touched" role="alert">
+                                <div ng-message="required">Digite o telefone</div>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <input type="email" class="form-control" name="email" placeholder="Email" ng-model="contato.email" ng-pattern="/^[_a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/" ng-required="true" autocomplete="off" spellcheck="false">
+                            <div ng-messages="formularioContato.email.$error" ng-show="formularioContato.email.$touched" role="alert">
+                                <div ng-message="required">Digite o e-mail</div>
+                                <div ng-message="pattern">O e-mail está incorreto</div>
+                            </div>
+                        </div>                        
+                        <div class="form-group col-md-12">
+                            <textarea class="form-control" name="mensagem" placeholder="Mensagem" rows="5" ng-required="true" ng-minlength="3" ng-maxlength="300" ng-model="contato.mensagem" autocomplete="off" spellcheck="false"></textarea>
+                            <div ng-messages="formularioContato.mensagem.$error" ng-show="formularioContato.mensagem.$touched" role="alert">
+                                <div ng-message="required">Digite a mensagem</div>
+                                <div ng-message="minlength">A mensagem está muito curta</div>
+                                <div ng-message="maxlength">A mensagem está muito longa</div>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-12">
+                            <button class="center-block" type="submit" ng-disabled="formularioContato.$invalid || travarBotao">{{textoBotaoEnviar}}</button>
+                            <div class="alert alert-success" ng-show="emailEnviado == 1" role="alert">E-mail enviado com sucesso!</div>
+                            <div class="alert alert-danger" ng-show="emailEnviado == 2" role="alert">Erro ao enviar o e-mail, tente novamente mais tarde ou ligue para nós.</div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
 </div>

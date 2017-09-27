@@ -1,1 +1,1 @@
-var app = angular.module('RWA.Web', ["ui.router"]);
+var app = angular.module('RWA.Web', ["ui.router", "duScroll", "ui.bootstrap"]);

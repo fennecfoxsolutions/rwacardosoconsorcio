@@ -1,41 +1,45 @@
 
 app.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locationProvider) {
-    
-    $locationProvider.html5Mode(true);
 
     $stateProvider
         .state('home', {
             url: "/home",
             reloadOnSearch: false,
             templateUrl: "clientapp/components/home/home.html",
-            title: 'Igaz Engenharia | Especialista em Impermeabilizações'
+            title: 'RWA Consórcio Cardoso | Especialista em Consórcios'
         })    
-        .state('servicos', {
-            url: "/servicos",            
+        .state('como-fazer-consorcio', {
+            url: "/como-fazer-consorcio",            
             reloadOnSearch: false,
             templateUrl: "clientapp/components/home/home.html",
-            title: 'Nossos Serviços | Especialista em Impermeabilizações'
+            title: 'Como funciona | Especialista em Consórcios'
 
         })
-        .state('obras-recentes', {
-            url: "/obras-recentes",
+        .state('tipos-consorcio', {
+            url: "/tipos-consorcio",
             reloadOnSearch: false,
             templateUrl: "clientapp/components/home/home.html",
-            title: 'Obras Recentes | Especialista em Impermeabilizações' 
+            title: 'Tipos de Consórcios | Especialista em Consórcios' 
         })
-        .state('nossa-empresa', {
-            url: "/nossa-empresa",
+        .state('vantagens', {
+            url: "/vantagens",
             reloadOnSearch: false,
             templateUrl: "clientapp/components/home/home.html",
-            title: 'Conheça nossa trajetória | Especialista em Impermeabilizações' 
+            title: 'Vantagens de fazer | Especialista em Consórcios' 
+        })
+        .state('depoimentos', {
+            url: "/depoimentos",
+            reloadOnSearch: false,
+            templateUrl: "clientapp/components/home/home.html",
+            title: 'Depoimentos | Especialista em Consórcios' 
         })
         .state('contato', {
             url: "/contato",
             reloadOnSearch: false,
             templateUrl: "clientapp/components/home/home.html",
-            title: 'Fale Conosco | Especialista em Impermeabilizações'
+            title: 'Fale Conosco | Especialista em Consórcios'
         })
 
-    $urlRouterProvider.otherwise("/home");
+    $urlRouterProvider.otherwise("/home");    
 
 });
