@@ -322,9 +322,38 @@ textarea.form-control{
     font-family: 'Roboto Slab', sans-serif;
 }
 
+.botao-rwa, .botao-rwa:hover, .botao-rwa:active {
+    text-transform: uppercase;
+    color: #f4c81d;
+    padding: 8px 20px;
+    background-color: transparent;
+    border: solid 3px #f4c81d;
+    margin-top: 10px;
+    border-radius: 25px;
+    font-family: 'Roboto Slab', sans-serif;
+    display: inline-block;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.botao-rwa:hover, .botao-rwa:active{
+    color: #fff;
+    background-color: #f4c81d;
+}
+
 input.form-control:focus, textarea.form-control:focus {
     box-shadow: none;
     border: 2px solid #f4c81d;
+}
+
+input.form-control.ng-invalid.ng-touched, textarea.form-control.ng-invalid.ng-touched{
+    border: 2px solid #F47E1D;
+}
+
+div[ng-message]{
+    color: #F47E1D;
+    margin-left: 10px;
+    margin-top: 8px;
 }
 
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -349,6 +378,32 @@ input:-moz-placeholder, textarea:-moz-placeholder { /* Firefox 18- */
     font-size: 16px;
     color: #fff !important;
     opacity:  1;
+}
+
+.modal-dialog .fechar-modal {
+    position: absolute;
+    right: 20px;
+    background-color: #e2e2e2;
+    padding: 15px 20px;
+    top: 20px;
+    cursor: pointer;
+    z-index: 99;
+}
+
+.modal-dialog .modal-content {
+    border-radius: 0;
+    box-shadow: none;
+    border: none;
+    padding: 10px 40px;
+}
+
+body.modal-open .modal {
+    display: flex !important;
+    height: 100%;
+} 
+
+body.modal-open .modal .modal-dialog {
+    margin: auto;
 }
 
 footer {

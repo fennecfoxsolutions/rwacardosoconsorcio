@@ -10,6 +10,8 @@
     "jquery-validation": "1.14.0",
     "jquery-validation-unobtrusive": "3.2.6",
     "swiper": "latest",
-    "angular-scroll":"latest"
+    "angular-scroll":"latest",
+    "angular-messages": "latest",
+    "angular-input-masks": "2.5.0"
   }
 }

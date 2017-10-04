@@ -22,7 +22,8 @@
       "wwwroot/clientapp/app.route.js",
       "wwwroot/clientapp/shared/route-spinner/routeSpinnerDirective.js",
       "wwwroot/clientapp/shared/template/templatecontroller.js",
-      "wwwroot/clientapp/components/home/homecontroller.js"
+      "wwwroot/clientapp/components/home/homecontroller.js",
+      "wwwroot/clientapp/components/modal/servico/capitalGiroController.js"
     ],
     // Optionally specify minification options
     "minify": {

@@ -12,15 +12,13 @@ app.directive('routeLoadingIndicator', function ($rootScope, $timeout) {
         link: function (scope, elem, attrs) {
             scope.isRouteLoading = false;
 
-            $rootScope.$on('$stateChangeStart', function () {
-                console.log('scope.isRouteLoading = true;');
+            $rootScope.$on('$stateChangeStart', function () {                
                 scope.isRouteLoading = true;
             });
 
             $rootScope.$on('$stateChangeSuccess', function () {
                 $timeout(function () {
-                    scope.isRouteLoading = false;
-                    console.log('scope.isRouteLoading = false;');
+                    scope.isRouteLoading = false;                    
                 }, 2200);
             });
         }

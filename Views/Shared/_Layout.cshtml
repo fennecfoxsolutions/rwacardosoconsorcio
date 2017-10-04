@@ -25,7 +25,7 @@
     </environment>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400|Roboto+Slab" rel="stylesheet">
 </head>
-<body ng-clock>
+<body ng-cloak>
 
     <route-loading-indicator></route-loading-indicator>
     
@@ -110,11 +110,15 @@
         <script src="~/lib/angular/angular.js"></script>
         <script src="~/lib/angular-ui-router/release/angular-ui-router.js"></script>
         <script src="~/lib/angular-bootstrap/ui-bootstrap.js"></script>
+        <script src="~/lib/angular-bootstrap/ui-bootstrap-tpls.js"></script>
         <script src="~/lib/angular-scroll/angular-scroll.js"></script>
+        <script src="~/lib/angular-messages/angular-messages.js"></script>
+        <script src="~/lib/angular-input-masks/angular-input-masks-standalone.js"></script>
         <script src="~/clientapp/app.module.js" asp-append-version="true"></script>
         <script src="~/clientapp/app.route.js" asp-append-version="true"></script>
         <script src="~/clientapp/shared/route-spinner/routeSpinnerDirective.js" asp-append-version="true"></script>
         <script src="~/clientapp/shared/template/templatecontroller.js" asp-append-version="true"></script> 
+        <script src="~/clientapp/components/modal/servico/capitalGiroController.js" asp-append-version="true"></script> 
         <script src="~/clientapp/components/home/homecontroller.js" asp-append-version="true"></script>
     </environment>
     <environment exclude="Development">
@@ -134,7 +138,10 @@
         </script>
         <script src="~/lib/angular-ui-router/release/angular-ui-router.min.js"></script>
         <script src="~/lib/angular-bootstrap/ui-bootstrap.min.js"></script>
+        <script src="~/lib/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
         <script src="~/lib/angular-scroll/angular-scroll.min.js"></script>
+        <script src="~/lib/angular-messages/angular-messages.min.js"></script>
+        <script src="~/lib/angular-input-masks/angular-input-masks-standalone.js"></script>
         <script src="~/js/site.min.js" asp-append-version="true"></script>
     </environment>
 

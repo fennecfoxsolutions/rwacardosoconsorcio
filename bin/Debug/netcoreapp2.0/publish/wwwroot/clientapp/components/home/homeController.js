@@ -1,4 +1,4 @@
-app.controller('homeController', ['$scope', '$document', '$location', '$timeout', function ($scope, $document, $location, $timeout) {
+app.controller('homeController', ['$scope', '$document', '$uibModal', '$location', '$timeout', '$log', function ($scope, $document, $uibModal, $location, $timeout, $log) {
 
     $scope.init = function () {
                 
@@ -44,6 +44,24 @@ app.controller('homeController', ['$scope', '$document', '$location', '$timeout'
             }, 1000);
         }
     }
+
+    //modal capital de giro
+
+    var modalInstanceCapitalGiro;
+    
+        $scope.openModalCapitalGiro = function () {
+            modalInstanceCapitalGiro = $uibModal.open({
+                animation: false,
+                templateUrl: './clientapp/components/modal/servico/capital-giro.tmpl.html',
+                size: 'lg',
+                controller: 'capitalGiroController'
+            });
+            modalInstanceCapitalGiro.result.then(function (selectedItem) {
+                $ctrl.selected = selectedItem;
+            }, function () {
+                $log.info('Modal dismissed at: ' + new Date());
+            });
+        };
 
     /* Enviar e-mail */
 
