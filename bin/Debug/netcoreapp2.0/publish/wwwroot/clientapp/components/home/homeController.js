@@ -1,4 +1,4 @@
-app.controller('homeController', ['$scope', '$document', '$uibModal', '$location', '$timeout', '$log', function ($scope, $document, $uibModal, $location, $timeout, $log) {
+app.controller('homeController', ['$scope', 'contatoFactory', '$document', '$uibModal', '$location', '$timeout', '$log', function ($scope, contatoFactory, $document, $uibModal, $location, $timeout, $log) {
 
     $scope.init = function () {
                 
@@ -16,10 +16,10 @@ app.controller('homeController', ['$scope', '$document', '$uibModal', '$location
         var swiperDepoimentos = new Swiper('#slide-depoimentos', {            
             direction: 'horizontal',
             loop: false,
-            autoplay: false,
+            autoplay: 8000,
             effect: 'slide',
             speed: 1200,
-            autoplayDisableOnInteraction: false,
+            autoplayDisableOnInteraction: true,
             pagination: '.swiper-pagination-depoimentos',
             paginationClickable: true      
         });
@@ -49,19 +49,43 @@ app.controller('homeController', ['$scope', '$document', '$uibModal', '$location
 
     var modalInstanceCapitalGiro;
     
-        $scope.openModalCapitalGiro = function () {
-            modalInstanceCapitalGiro = $uibModal.open({
-                animation: false,
-                templateUrl: './clientapp/components/modal/servico/capital-giro.tmpl.html',
-                size: 'lg',
-                controller: 'capitalGiroController'
-            });
-            modalInstanceCapitalGiro.result.then(function (selectedItem) {
-                $ctrl.selected = selectedItem;
-            }, function () {
-                $log.info('Modal dismissed at: ' + new Date());
-            });
-        };
+    $scope.openModalCapitalGiro = function () {
+        modalInstanceCapitalGiro = $uibModal.open({
+            animation: false,
+            templateUrl: './clientapp/components/modal/servico/capital-giro.tmpl.html',
+            size: 'lg',
+            controller: 'capitalGiroController'
+        });
+        modalInstanceCapitalGiro.result.then(function (selectedItem) {
+            $scope.selected = selectedItem;
+        }, function () {
+            $log.info('Modal dismissed at: ' + new Date());
+        });
+    };
+
+    //modal depoimento
+
+    var modalInstanceDepoimento;
+    
+    $scope.openModalDepoimento = function (depoimentoId) {
+        modalInstanceDepoimento = $uibModal.open({
+            animation: false,
+            templateUrl: './clientapp/components/modal/depoimento/depoimento.tmpl.html',
+            size: 'lg',
+            resolve: {               
+                id: function () {
+                    return depoimentoId;
+                }
+            },
+            controller: 'depoimentoController'
+        });
+        modalInstanceDepoimento.result.then(function (selectedItem) {
+            $scope.selected = selectedItem;
+        }, function () {
+            $log.info('Modal dismissed at: ' + new Date());
+        });
+    };
+
 
     /* Enviar e-mail */
 

@@ -3,7 +3,38 @@
 <head>    
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - RWA.CardosoConsorcio</title>
+
+    <meta property="og:url" content="http://rwaconsorcio.com.br" />
+    <meta property="og:image" content="http://rwaconsorcio.com.br/images/default/logo-rwa.svg">
+    <meta property="og:type" content="website">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content="RWA Consórcio Cardoso vai ajudar você a escolher o plano que tiver os melhores prazos e valores para o seu bolso.">
+    <meta name="keywords" content="Consórcio de Casa, Consórcio de Carro, Consórcio de Capital de Giro, Consórcio de Moto, Consórcio de Serviços, Consórcio de Caminhão">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+    <meta content='Fennec Fox Solutions' name='author' />
+
+    <link rel="apple-touch-icon" sizes="57x57" href="~/images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="~/images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="~/images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="~/images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="~/images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="~/images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="~/images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="~/images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="~/images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="~/images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="~/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="~/images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="~/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="~/images/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="~/images/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>@ViewData["Title"]</title>
     <script src="~/lib/modernizr/modernizr-custom.js" asp-append-version="true"></script>
     <environment include="Development">
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
@@ -64,16 +95,16 @@
                 <div class="col-md-4 col-xs-12 text-xs-center">                    
                     <h3><span class="amarelo">|</span> RWA Consórcio Cardoso</h3>
                     <p>
-                        Rua Endereço completo, 000 <br> 
-                        Nome do Bairro - Cidade - SP
+                        Rua Santa Filomena, 234 Sala 105 <br>                        
+                        Centro - São Bernardo do Campo - SP
                     </p>
                 </div>
                 <div class="col-md-4 col-xs-12 text-xs-center">                    
                     <h3><span class="amarelo">|</span> Entre em contato</h3>
                     <p>
-                        <i class="fa fa-phone" aria-hidden="true"></i>&nbsp;&nbsp;11 0000 - 0000 / 0000 - 0000 <br />
-                        <i class="fa fa-whatsapp" aria-hidden="true"></i>&nbsp;&nbsp;11 90000 - 0000 <br />
-                        <i class="fa fa-envelope-o" aria-hidden="true"></i>&nbsp;&nbsp;contato@rwa.com.br
+                        <!-- <i class="fa fa-phone" aria-hidden="true"></i>&nbsp;&nbsp;11 0000 - 0000 / 0000 - 0000 <br /> -->
+                        <i class="fa fa-whatsapp" aria-hidden="true"></i>&nbsp;&nbsp;11 95487-6438 <br />
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i>&nbsp;&nbsp;contato@@rwaconsorcio.com.br
                     </p>
                 </div>
                 <div class="col-md-4 col-xs-12 text-center">
@@ -116,9 +147,12 @@
         <script src="~/lib/angular-input-masks/angular-input-masks-standalone.js"></script>
         <script src="~/clientapp/app.module.js" asp-append-version="true"></script>
         <script src="~/clientapp/app.route.js" asp-append-version="true"></script>
-        <script src="~/clientapp/shared/route-spinner/routeSpinnerDirective.js" asp-append-version="true"></script>
+        <script src="~/clientapp/shared/route-spinner/routeSpinnerDirective.js" asp-append-version="true"></script>                
+        <script src="~/clientapp/components/contato/contatoFactory.js" asp-append-version="true"></script> 
+        <script src="~/clientapp/shared/config/configConstants.js" asp-append-version="true"></script> 
         <script src="~/clientapp/shared/template/templatecontroller.js" asp-append-version="true"></script> 
         <script src="~/clientapp/components/modal/servico/capitalGiroController.js" asp-append-version="true"></script> 
+        <script src="~/clientapp/components/modal/depoimento/depoimentoController.js" asp-append-version="true"></script> 
         <script src="~/clientapp/components/home/homecontroller.js" asp-append-version="true"></script>
     </environment>
     <environment exclude="Development">
@@ -138,7 +172,7 @@
         </script>
         <script src="~/lib/angular-ui-router/release/angular-ui-router.min.js"></script>
         <script src="~/lib/angular-bootstrap/ui-bootstrap.min.js"></script>
-        <script src="~/lib/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+        <script src="~/lib/angular-bootstrap/ui-bootstrap-tpls.js"></script>
         <script src="~/lib/angular-scroll/angular-scroll.min.js"></script>
         <script src="~/lib/angular-messages/angular-messages.min.js"></script>
         <script src="~/lib/angular-input-masks/angular-input-masks-standalone.js"></script>
