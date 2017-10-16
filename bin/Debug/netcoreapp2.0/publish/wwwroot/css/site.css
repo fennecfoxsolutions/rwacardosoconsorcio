@@ -119,6 +119,26 @@ nav.navbar-inverse .navbar-nav > li > a:hover:before, nav.navbar-inverse .navbar
     background-size: cover;
 }
 
+#banner-principal .slide-capital {
+    background-image: url('../images/banner/banner-capital.jpg');
+    background-size: cover;
+}
+
+#banner-principal .slide-caminhao {
+    background-image: url('../images/banner/banner-caminhao.jpg');
+    background-size: cover;
+}
+
+#banner-principal .slide-casa {
+    background-image: url('../images/banner/banner-casa.jpg');
+    background-size: cover;
+}
+
+#banner-principal .slide-servicos {
+    background-image: url('../images/banner/banner-servicos.jpg');
+    background-size: cover;
+}
+
 #banner-principal .painel-texto {
     background-color: rgba(255, 200, 0, 0.8);
     padding: 20px 30px 20px 30px;
@@ -219,7 +239,7 @@ nav.navbar-inverse .navbar-nav > li > a:hover:before, nav.navbar-inverse .navbar
     text-align: justify;
 }
 
-p {
+p, ul > li {
     font-weight: lighter;
     font-size: 17px;
 }
@@ -298,6 +318,10 @@ img.img-consorcio-servico{
 
 .painel-contato h2::before{
     opacity: 0;
+}
+
+ul.lista-beneficios-rwa{
+    padding-left: 20px;
 }
 
 .form-control{

@@ -5,7 +5,7 @@ app.controller('homeController', ['$scope', 'contatoFactory', '$document', '$uib
         var swiperBanner = new Swiper('#banner-principal', {            
             direction: 'horizontal',
             loop: false,
-            autoplay: 8000,
+            autoplay: 7000,
             effect: 'fade',
             speed: 1200,
             autoplayDisableOnInteraction: false,              
@@ -16,7 +16,7 @@ app.controller('homeController', ['$scope', 'contatoFactory', '$document', '$uib
         var swiperDepoimentos = new Swiper('#slide-depoimentos', {            
             direction: 'horizontal',
             loop: false,
-            autoplay: 8000,
+            autoplay: 7000,
             effect: 'slide',
             speed: 1200,
             autoplayDisableOnInteraction: true,

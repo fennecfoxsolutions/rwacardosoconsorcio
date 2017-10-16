@@ -27,6 +27,12 @@ app.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locatio
             templateUrl: "clientapp/components/home/home.html",
             title: 'Vantagens de fazer | Especialista em Consórcios' 
         })
+        .state('sobre', {
+            url: "/sobre",
+            reloadOnSearch: false,
+            templateUrl: "clientapp/components/home/home.html",
+            title: 'Vantagens de fazer | Especialista em Consórcios' 
+        })
         .state('depoimentos', {
             url: "/depoimentos",
             reloadOnSearch: false,
