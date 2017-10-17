@@ -455,6 +455,10 @@ footer h3 {
     font-weight: bold;
 }
 
+footer a, footer a:hover, footer a:active, footer a:visited {
+    color: #ededed;
+}
+
 footer p {
     color: #ededed;    
     font-size: 14px;
