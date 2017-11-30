@@ -227,13 +227,25 @@
     <section class="painel-branco" id="videos">
         <div class="container">
                 <div class="row">
-                        <div class="col-md-12">
-                            <h2>Juros altos aumentam a procura pelo consórcio</h2>                   
+                    <div class="col-md-12">
+                            <h2>Confira dicas para um bom consórcio</h2>                   
                         </div>              
                     </div>
-            <div class="row">
+            <div class="row">                
                 <div class="col-md-10 col-md-offset-1 espaco-top-30">
-                        <iframe width="100%" height="460" src="https://www.youtube.com/embed/nwAStvlWzZM?rel=0" frameborder="0" allowfullscreen></iframe>
+                    <div id="slide-videos" class="swiper-container">
+                        <div class="swiper-wrapper">                   
+                            <div class="swiper-slide">
+                                <iframe width="100%" height="460" src="https://www.youtube.com/embed/pqESvP4qycA" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                            <div class="swiper-slide">
+                                <iframe width="100%" height="460" src="https://www.youtube.com/embed/nwAStvlWzZM?rel=0" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>    
+                    <div class="swiper-pagination swiper-pagination-videos"></div>
+                    <div class="swiper-button-next swiper-button-next-videos"></div>
+                    <div class="swiper-button-prev swiper-button-prev-videos"></div>
                 </div>
             </div>
         </div>
@@ -308,6 +320,19 @@
                 <div class="col-md-12">
                     <div id="slide-depoimentos" class="swiper-container">
                         <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <img src="images/depoimentos/carro.png" class="img-responsive pull-right" />
+                                        </div>
+                                        <div class="col-md-8 pd-top-70">
+                                            <h4>Luciano Reis</h4>
+                                            <strong>Consórcio de Carro</strong>
+                                            <p>Meus agradecimentos a RWA e ao Renato Cardoso, que além de ser amigo, é também um Gestor muito competente. </p>
+                                            <p><button class="botao-rwa" ng-click="openModalDepoimento('depoimento-4')">Ver case de sucesso</button></p>
+                                        </div>
+                                    </div>
+                                </div>
                             <div class="swiper-slide">
                                 <div class="row">
                                     <div class="col-md-4">

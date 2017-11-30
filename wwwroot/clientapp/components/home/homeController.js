@@ -23,6 +23,19 @@ app.controller('homeController', ['$scope', 'contatoFactory', '$document', '$uib
             pagination: '.swiper-pagination-depoimentos',
             paginationClickable: true      
         });
+
+        var swiperVideos = new Swiper('#slide-videos', {            
+            direction: 'horizontal',
+            loop: false,
+            autoplay: false,
+            effect: 'slide',
+            speed: 1200,
+            autoplayDisableOnInteraction: true,
+            pagination: '.swiper-pagination-videos',
+            paginationClickable: true,
+            nextButton: '.swiper-button-next-videos',
+            prevButton: '.swiper-button-prev-videos'
+        });
         
     };
 
